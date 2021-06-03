@@ -10,40 +10,38 @@ const db = require('./models')
 //   console.log(createdUser)
 // })
 
-async function createUser() {
-  try {
-    const createdUser = await db.user.create({
-      firstName: 'Nick',
-      lastName: 'Schmitt',
-      age: 29,
-      email: 'birthdayboy@gmail.com'
-    })
+// async function createUser() {
+//   try {
+//     const createdUser = await db.user.create({
+//       firstName: 'Nick',
+//       lastName: 'Schmitt',
+//       age: 29,
+//       email: 'birthdayboy@gmail.com'
+//     })
 
-    console.log(createdUser)
-  } catch (error) {
-    console.log(error)
-  }
-}
+//     console.log(createdUser)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
 
 // createUser()
 
 // READ
-
-
 // refactor finding nick in the DB to async/await
-async function findNick() {
-  try {
-    const foundUser = await db.user.findOne({
-      where: { firstName: 'Nick' }
-    })
+// async function findNick() {
+//   try {
+//     const foundUser = await db.user.findOne({
+//       where: { firstName: 'Nick' }
+//     })
 
-    console.log(foundUser)
-  } catch(error) {
-    console.log(error)
-  }
-}
+//     console.log(foundUser)
+//   } catch(error) {
+//     console.log(error)
+//   }
+// }
 
-findNick()
+// findNick()
 
 // UPDATE
 
