@@ -28,11 +28,6 @@ async function createUser() {
 // createUser()
 
 // READ
-// db.user.findOne({
-//   where: { firstName: 'Nick' }
-// }).then( foundUser=> {
-//   console.log(foundUser)
-// })
 
 
 // refactor finding nick in the DB to async/await
