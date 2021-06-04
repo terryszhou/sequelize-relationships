@@ -8,7 +8,7 @@ async function newPet() {
         const newPet = await user.createPet({
             name: "Barko",
             species: "Barkly"
-        })
+        })3
         log(newPet)
     } catch(err) {
         log(err)
